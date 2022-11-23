@@ -1,0 +1,155 @@
+html{
+    font-family:"sans-serif","serif";
+}
+.header{
+    margin:0 auto;
+    width:100%;
+    display:flex;
+    height: 67px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size:24px;
+}
+.menu{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: #0D78A6;
+    height: 67px;
+}
+.menu a{
+    text-decoration:none;
+    color:#fff;
+    letter-spacing:.1em;
+}
+.topbanner img{
+    width:100%;
+    height: 480px;
+    object-fit: cover;
+}
+.contents{
+    width:auto;
+    margin:0 auto;
+}
+@media screen and (min-width: 1120px) {
+    .contents{
+     width:1120px;
+    } 
+ }
+ .whatsnew{
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+}
+.whatsnew .wrap{
+    display:flex;
+    justify-content: space-evenly;
+}
+.whatsnew img{
+    width:30%;
+    height:175px;
+    object-fit: cover;
+    margin-left:10px;
+}
+
+.tokushu{
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:30px;
+}
+.tokushu .wrap{
+    flex-direction: column;
+    display:flex;
+    justify-content: space-evenly;
+}
+.tokushu .wrap img{
+    margin-bottom:30px;
+    width:100%;
+    height:155px;
+    object-fit: cover;
+}
+.tokushu .wrap div{
+    height:155px;
+}
+.tokushu .wrap img:first-child{
+    object-position: 100% 34%;
+}
+.tokushu .wrap img:nth-child(2){
+    object-position: 100% 60%;
+}
+.tokushu .wrap div img{
+    width: 50%;
+    object-position: 100% 50%!important;
+}
+.img-wrap{
+    display:flex;
+}
+.img-wrap div{
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.footer{
+    width:100%;
+    background-color: #EBEBEB;
+}
+.footer .wrap{
+    display:flex;
+    justify-content: space-evenly;
+}
+.footer li{
+    font-size: 14px;
+    list-style-type: none;
+}
+.footer-bottom{
+    background-color: #807C7C;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.companyname{
+    color:#fff;
+}
+.copyright{
+    color:#fff;
+    font-size:10px;
+}
+
+@media screen and (min-width: 681px) {
+    .tokushu-text{
+        font-size:24px;
+    }
+    .footer .wrap .pcOnly{
+        display:flex;
+    }
+}
+@media screen and (max-width: 680px) {
+    .menu{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .whatsnew{
+        margin:10px;
+    }
+    .whatsnew .wrap{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .whatsnew img{
+        width:80%;
+        margin:10px;
+    }
+    .footer .wrap .pcOnly{
+        display:none;
+    }
+    .tokushu-text{
+        font-size:16px;
+    }
+ }
